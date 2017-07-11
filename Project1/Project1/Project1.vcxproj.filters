@@ -54,6 +54,30 @@
     <ClCompile Include="..\..\projects\rugliokm\dominion\testShuffle.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="unittest2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittest3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittest1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unittest4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cardtest1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cardtest2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cardtest3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cardtest4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\projects\rugliokm\dominion\dominion.h">
