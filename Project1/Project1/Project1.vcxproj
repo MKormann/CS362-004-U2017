@@ -114,6 +114,10 @@
   <ItemGroup>
     <ClCompile Include="..\..\projects\rugliokm\dominion\badTestDrawCard.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\betterTestDrawCard.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\cardtest1.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\cardtest2.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\cardtest3.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\cardtest4.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\dominion.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\interface.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\playdom.c" />
@@ -125,6 +129,10 @@
     <ClCompile Include="..\..\projects\rugliokm\dominion\testDrawCard.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\testInit.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\testShuffle.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\unittest1.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\unittest2.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\unittest3.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\unittest4.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\projects\rugliokm\dominion\dominion.h" />

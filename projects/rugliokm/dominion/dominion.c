@@ -441,7 +441,7 @@ int scoreFor (int player, struct gameState *state) {
     }
 
   //score from deck
-  for (i = 0; i < state->discardCount[player]; i++)
+  for (i = 0; i < state->deckCount[player]; i++)
     {
       if (state->deck[player][i] == curse) { score = score - 1; };
       if (state->deck[player][i] == estate) { score = score + 1; };
@@ -1219,7 +1219,7 @@ int councilRoomCardEffect(int handPos, int currentPlayer, struct gameState *stat
 		}
 	}
 
-	//put played card in played card pile
+	////put played card in played card pile
 	discardCard(handPos, currentPlayer, state, 0);
 
 	return 0;

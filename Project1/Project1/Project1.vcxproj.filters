@@ -54,6 +54,30 @@
     <ClCompile Include="..\..\projects\rugliokm\dominion\testShuffle.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\unittest1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\cardtest1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\cardtest2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\cardtest3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\cardtest4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\unittest2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\unittest3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\unittest4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\projects\rugliokm\dominion\dominion.h">
