@@ -1,3 +1,270 @@
+Unit Test 1 - getWinners()
+----------------------------------------------
+
+Test #1: Correct single winner for all variations of number of players 
+----------------------------------------------
+Test #1 was SUCCESSFUL
+
+Test #2: Correct winners when multiple winners 
+----------------------------------------------
+Test #2 was SUCCESSFUL
+
+Test #3: Correct winner when a tie score happens with one player having less turns 
+----------------------------------------------
+Test #3 was SUCCESSFUL
+
+
+TEST RESULTS: 3/3 tests passed successfully
+
+Unit Test 2 - scoreFor()
+----------------------------------------------
+
+Test #1: Correct score with cards in hand only 
+----------------------------------------------
+Expected score: 10  Actual score: 10
+
+Test #1 was SUCCESSFUL
+
+Test #2: Correct score with cards in discard only 
+----------------------------------------------
+Expected score: 10  Actual score: 10
+
+Test #2 was SUCCESSFUL
+
+Test #3: Correct score with cards in deck only 
+----------------------------------------------
+Expected score: 10  Actual score: 10
+
+Test #3 was SUCCESSFUL
+
+Test #4: Correct score with cards in all three piles 
+----------------------------------------------
+Expected score: 31  Actual score: 30
+
+Test #4 has FAILED
+
+Test #5: Correct score with no cards 
+----------------------------------------------
+Expected score: 0  Actual score: 0
+
+Test #5 was SUCCESSFUL
+
+Test #6: Test gardens scoring. 2 garden cards among 30 total cards spread over all piles 
+----------------------------------------------
+Expected score: 6  Actual score: 0
+
+Test #6 has FAILED
+
+Test #7: Test two players' scores from same game state 
+----------------------------------------------
+Expected score: First player > Second Player  Actual score: 54 > 9
+
+Test #7 was SUCCESSFUL
+
+
+TEST RESULTS: 5/7 tests passed successfully
+
+Unit Test 3 - gainCard()
+----------------------------------------------
+
+Test #1: Returns -1 for all cards when supplyCounts are all 0 
+----------------------------------------------
+Test #1 was SUCCESSFUL
+
+Test #2: Add one of every card to player deck 
+----------------------------------------------
+Test #2 was SUCCESSFUL
+
+Test #3: Check hand and discard counts remain unchanged 
+----------------------------------------------
+Expected hand count: 0  Actual hand count: 0
+Expected discard count: 0  Actual discard count: 0
+Test #3 was SUCCESSFUL
+
+Tests #4 & 5: Add one of each card to the remaining two piles (test 4 discard, test 5 hand) 
+----------------------------------------------
+Test #4 was SUCCESSFUL
+
+Test #5 was SUCCESSFUL
+
+Test #6: Check deck count remains unchanged after add 
+----------------------------------------------
+Expected deck count: 10  Actual deck count: 10
+Test #6 was SUCCESSFUL
+
+Test #7: Check all card supplies were incremented back to 0 
+----------------------------------------------
+Test #7 was SUCCESSFUL
+
+Test #8: Check that calling gainCard on cards not in the game fails 
+----------------------------------------------
+Test #8 was SUCCESSFUL
+
+
+TEST RESULTS: 8/8 tests passed successfully
+
+Unit Test 4 - endTurn()
+----------------------------------------------
+
+Test #1: Turn incremented to next player after each call 
+----------------------------------------------
+Test #1 was SUCCESSFUL
+
+Test #2: Cards removed from hand 
+----------------------------------------------
+Test #2 was SUCCESSFUL
+
+Test #3: Correct cards added to discard pile 
+----------------------------------------------
+Test #3 was SUCCESSFUL
+
+Test #4: Discard count incremented properly 
+----------------------------------------------
+Test #4 was SUCCESSFUL
+
+Test #5: Deck unchanged 
+----------------------------------------------
+Test #5 was SUCCESSFUL
+
+Test #6: Next player draws correct number cards 
+----------------------------------------------
+Test #6 was SUCCESSFUL
+
+
+TEST RESULTS: 6/6 tests passed successfully
+
+Card Test 1 - smithy
+----------------------------------------------
+
+Test 2 instance failure: Player 1 deck was not decremented by 3.
+Test 1 instance failure: Player 1 hand did not increase by 2 (3 drawn, 1 discard)
+Test 2 instance failure: Player 2 deck was not decremented by 3.
+Test 1 instance failure: Player 2 hand did not increase by 2 (3 drawn, 1 discard)
+Test 2 instance failure: Player 3 deck was not decremented by 3.
+Test 1 instance failure: Player 3 hand did not increase by 2 (3 drawn, 1 discard)
+Test 2 instance failure: Player 4 deck was not decremented by 3.
+Test 1 instance failure: Player 4 hand did not increase by 2 (3 drawn, 1 discard)
+
+Test #1: Player receives 3 cards, discards 1 
+----------------------------------------------
+Test #1 has FAILED
+
+Test #2: All cards drawn by a player came from their own deck 
+----------------------------------------------
+Test #2 has FAILED
+
+Test #3: All other players' states remain unchanged 
+----------------------------------------------
+Test #3 was SUCCESSFUL
+
+Test #4: None of the kingdom or victory card piles were affected. 
+----------------------------------------------
+Test #4 was SUCCESSFUL
+
+
+TEST RESULTS: 2/4 tests passed successfully
+
+Test #1: Last two cards in hand of player are treasure cards 
+----------------------------------------------
+Test #1 was SUCCESSFUL
+
+Test #2: Treasure cards in hand of player equal to the first two in their deck previously.
+-----------------------------------------------
+Test #2 has FAILED
+
+Test #3: None of the new cards in the discard pile are treasure cards.
+-----------------------------------------------
+Test #3 has FAILED
+
+Test #4: State of other player remains unchanged.
+----------------------------------------------
+Test #4 was SUCCESSFUL
+
+Test #5: No cards drawn from kingdom or victory piles.
+----------------------------------------------
+Test #5 was SUCCESSFUL
+
+
+TEST RESULTS: 3/5 tests passed successfully
+
+Card Test 3 - remodel
+----------------------------------------------
+
+Test #1: Trying to trash the remodel card should return a value of -1 (for error)
+----------------------------------------------
+Test #1 was SUCCESSFUL
+
+Test #2: Ineligible card (value > 2 of trashed card) is rejected
+----------------------------------------------
+Test #2 has FAILED
+
+Test #3: Eligible card (card within value of 2) is added to discard 
+----------------------------------------------
+Test #3 was SUCCESSFUL
+
+Test #4: Correct supply pile decrements correctly by 1
+----------------------------------------------
+Test #4 was SUCCESSFUL
+
+Test #5: Card is taken from supply, therefore player deck is unchanged
+----------------------------------------------
+Test #5 was SUCCESSFUL
+
+Test #6: Hand count decreases by 2 (Removed remodel and trash card) 
+----------------------------------------------
+Test #6 was SUCCESSFUL
+
+
+TEST RESULTS: 5/6 tests passed successfully
+
+Card Test 4 - village
+----------------------------------------------
+
+Test 6 instance failure: The last card in player 1's hand does not match the first card that was on their deck
+Test 2 instance failure: Player 2 deck was not decremented by 1.
+Test 4 instance failure: Player 0 deck count does not match.
+Test 6 instance failure: The last card in player 2's hand does not match the first card that was on their deck
+Test 2 instance failure: Player 3 deck was not decremented by 1.
+Test 4 instance failure: Player 0 deck count does not match.
+Test 6 instance failure: The last card in player 3's hand does not match the first card that was on their deck
+Test 2 instance failure: Player 4 deck was not decremented by 1.
+Test 4 instance failure: Player 0 deck count does not match.
+Test 6 instance failure: The last card in player 4's hand does not match the first card that was on their deck
+
+Test #1: Player receives 1 card, discards 1 
+----------------------------------------------
+Test #1 was SUCCESSFUL
+
+Test #2: All cards drawn by a player came from their own deck 
+----------------------------------------------
+Test #2 has FAILED
+
+Test #3: Player's actions have increased by 2 
+----------------------------------------------
+Test #3 was SUCCESSFUL
+
+Test #4: All other players' states remain unchanged. 
+----------------------------------------------
+Test #4 has FAILED
+
+Test #5: None of the kingdom or victory card piles were affected. 
+----------------------------------------------
+Test #5 was SUCCESSFUL
+
+Test #6: The card on the top of the player's deck pile is now in hand.
+----------------------------------------------
+Test #6 has FAILED
+
+
+TEST RESULTS: 3/6 tests passed successfully
+
+File 'dominion.c'
+Lines executed:45.62% of 559
+Branches executed:55.66% of 415
+Taken at least once:42.17% of 415
+Calls executed:31.58% of 95
+Creating 'dominion.c.gcov'
+
         -:    0:Source:dominion.c
         -:    0:Graph:dominion.gcno
         -:    0:Data:dominion.gcda
