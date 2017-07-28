@@ -122,6 +122,9 @@
     <ClCompile Include="..\..\projects\rugliokm\dominion\interface.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\playdom.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\player.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\randomtestcard1.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\randomtestcard2.c" />
+    <ClCompile Include="..\..\projects\rugliokm\dominion\randomtestcard3.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\rngs.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\rt.c" />
     <ClCompile Include="..\..\projects\rugliokm\dominion\supplyTest.c" />

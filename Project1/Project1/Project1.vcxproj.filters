@@ -78,6 +78,15 @@
     <ClCompile Include="..\..\projects\rugliokm\dominion\unittest4.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\randomtestcard1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\randomtestcard2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\projects\rugliokm\dominion\randomtestcard3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\projects\rugliokm\dominion\dominion.h">

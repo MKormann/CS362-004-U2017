@@ -56,6 +56,15 @@ cardtest3: cardtest3.c dominion.o rngs.o
 cardtest4: cardtest4.c dominion.o rngs.o
 	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o $(CFLAGS)
 
+randomtestcard1: randomtestcard1.c dominion.o rngs.o
+	gcc -o randomtestcard1 -g randomtestcard1.c dominion.o rngs.o $(CFLAGS)
+
+randomtestcard2: randomtestcard2.c dominion.o rngs.o
+	gcc -o randomtestcard2 -g randomtestcard2.c dominion.o rngs.o $(CFLAGS)
+
+randomtestcard3: randomtestcard3.c dominion.o rngs.o
+	gcc -o randomtestcard3 -g randomtestcard3.c dominion.o rngs.o $(CFLAGS)
+
 unitTestSuite: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
 
 runUnitTests: unitTestSuite
@@ -70,7 +79,16 @@ runUnitTests: unitTestSuite
 	gcov -b -c dominion.c >> unittestresult.out	
 	cat dominion.c.gcov >> unittestresult.out
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard unitTestSuite
+randomTestSuite: randomtestcard1 randomtestcard2 randomtestcard3
+
+runRandomTests: randomTestSuite
+	./randomtestcard1 &> randomtestresult.out
+	./randomtestcard2 >> randomtestresult.out
+	./randomtestcard3 >> randomtestresult.out
+	gcov -b -c dominion.c >> randomtestresult.out
+	cat dominion.c.gcov >> randomtestresult.out
+
+all: playdom player testDrawCard testBuyCard badTestDrawCard unitTestSuite randomTestSuite
 
 clean:
 	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
