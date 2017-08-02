@@ -91,7 +91,7 @@ int testScoreFor() {
 
 	printf("Test #4: Correct score with cards in all three piles \n");
 	printf("----------------------------------------------\n");
-	printf("Expected score: %d  Actual score: %d\n\n", 31, scoreFor(0, &state));
+	printf("Expected score: %d  Actual score: %d\n\n", 33, scoreFor(0, &state));
 	if (33 == scoreFor(0, &state)) // Check if expected score is returned
 		assertTrue(4);
 	else

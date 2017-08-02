@@ -677,7 +677,7 @@ int playAdventurer(struct gameState *state)
 		//BUG PLACED HERE: 
 		//WAS: if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
 		if (cardDrawn = copper || cardDrawn == silver || cardDrawn == gold)
-		{
+		
 			drawntreasure++;
 		}			
 		else

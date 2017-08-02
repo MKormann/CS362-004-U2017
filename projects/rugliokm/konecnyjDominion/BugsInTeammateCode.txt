@@ -1,0 +1,28 @@
+Bug: Playing Smithy does not draw correct number of cards
+Status: Open
+
+Description:  Whenever a player chooses to play Smithy card their hand count is not reflecting
+the correct change.  In addition, their deck count is also not being decremented by three as
+would be expected after drawing three cards.
+How-to: Bug can be recreated by calling the cardEffect function with smithy as the first parameter.
+The rest of the game state should not matter.
+
+
+Bug: Playing Adventurer places incorrect cards into player hand.
+Status: Open
+
+Description: The cards being placed into the players hand upon using an adventurer card are not
+consistently treasure cards.  ~80% of the time one of the cards placed into the player hand is
+not copper, silver, or gold.
+How-to: Call the cardEffect function with adventurer as the first parameter, and with the first cards
+on the current player's deck not being treasure cards.  This should place non-treasure cards into the
+player hand.
+
+
+Bug:  Calling getWinners does not return the correct winners for a game
+Status: Open
+
+Description:  The getWinners function is currently returning incorrect information on which players
+have a winning set of cards.  Certain variations of games will return the correct winner, but very few.
+How-to:  While this error can be reached from multiple gameStates, simply setting one player alone to
+have the only victory card in the game in their deck will properly recreate the bug.
